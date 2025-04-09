@@ -1,4 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+    --font-title: "Anek Latin", "sans-serif";
+    --font-body: "Helvetica Neuve", "sans-serif"; 
+  }
 
 :root {
     --font-heading: ;
@@ -96,7 +103,7 @@ body {
     
 
     100% {
-        width: 100%;
+        width: 110%;
         height: 3.5rem;
     }
 

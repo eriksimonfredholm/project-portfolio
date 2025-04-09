@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet">
+    <script src="/src/main.js" defer></script>
 </head>
 
-<body class="bg-blue-300 lowercase overflow-x-hidden">
-    <div class="project-portfolio">
+<body class="bg-blue-300 lowercase font-body w-screen overflow-x-hidden">
+    <div class="project-portfolio flex flex-col">
 
         <!-- site header -->
-        <header class=" relative z-50">
+        <header class="z-50">
+            <div class="flex items-center py-2 px-16 justify-between">
 
-            <!-- Logo -->
-            <div class="max-w-7xl mx-auto flex items-center gap-4 py-2 px-8 justify-between ">
+                <!-- Logo -->
                 <img src="/logo/logo-4d.png" alt="Site logo: Huitre" class="max-h-10">
 
                 <!-- Menu -->
-                <nav class="">
+                <nav class="font-title">
                     <ul class="flex gap-4 py-4 px-8">
                         <li class="border-b-4 opacity-50 border-transparent hover:border-blue-800 current-page"><a
                                 href="#">home</a></li>
@@ -33,14 +34,13 @@
                     </ul>
                 </nav>
 
-
-
                 <!-- Button list -->
                 <div class="flex gap-4">
+
                     <!-- CTO -->
                     <button
                         class="flex items-center gap-2 py-2 border-3 border-transparent px-4 bg-linear-to-r from-blue-300 from-10% via-blue-100 to-90% to-blue-300 rounded-xl  drop-shadow-lg hover:border-black lowercase">
-                        <a href="" class="font-bold">get in touch</a>
+                        <a href="" class="font-semibold font-title">get in touch</a>
                         <div>
                             <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +52,7 @@
 
                     <!-- language -->
                     <button>
-                        <p>en</p>
+                        <p class="font-title">en</p>
                     </button>
 
                     <!-- Menu burger -->
@@ -63,7 +63,6 @@
                         </svg>
                     </button>
                 </div>
-
             </div>
 
             <!-- Glass effect -->
@@ -72,13 +71,54 @@
         </header>
 
         <!-- hero -->
-        <div class="hero-bg flex-row-reverse h-100 px-8 pt-16">
+        <div class="hero-bg  block">
+            <div class="hero-container grid grid-cols-2 px-16 mt-10">
+                <div class="hero-text  z-1">
+                    <div class="flex flex-col gap-1">
+                        <h1 id="hero-title"
+                            class=" font-title text-4xl truncate w-fit font-bold text-white bg-black py-2 px-4 rounded-2xl">
+                            Bringing
+                            Your
+                            Ideas
+                            to Life with</h1>
+                        <h1 id="hero-title"
+                            class=" font-title text-4xl truncate w-fit font-bold text-white bg-black py-2 px-4 rounded-2xl">
+                            simple
+                            and
+                            Functional
+                            Websites</h1>
+                        <h3 id="hero-excerpt" class="w-136 py-2 px-4">As a passionate web designer and developer with
+                            Scandinavian roots,
+                            I
+                            create simple,
+                            user-friendly websites</h2>
+                    </div>
 
-            <div class="hero-container flex flex-col gap-4">
-                <div class="hero-imgs ">
+                    <!-- CTO -->
+                    <button id="hero-cto"
+                        class="flex items-center align-middle border-3 border-transparent w-70 gap-2 py-2 px-4 bg-gradient-to-r from-blue-200 via-blue-50 to-blue-200 rounded-xl drop-shadow-md lowercase hover:border-black">
+                        <a href="" class="font-semibold font-title">Let's Build Something Amazing!</a>
+                        <div>
+                            <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
+                                    fill="currentColor" />
+                            </svg>
+                    </button>
 
+                    <svg id="scroll-arrow" class="size-6 animate-bounce z-50 mt-25" width="24" height="24"
+                        viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0001 4H13.0001V16L18.5001 10.5L19.9201 11.92L12.0001 19.84L4.08008 11.92L5.50008 10.5L11.0001 16V4Z"
+                            fill="black" />
+                    </svg>
+
+                </div>
+
+                <div class="hero-imgs -z-0">
                     <!-- screen -->
-                    <svg class=" absolute top-20 left-80" width="911" height="593" viewBox="0 0 911 593" fill="none"
+                    <svg class="absolute top-20 right-10 " width="911" height="593" viewBox="0 0 911 593" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="screen" filter="url(#filter0_d_48_634)">
                             <g id="screen-bg">
@@ -202,8 +242,8 @@
                     </svg>
 
                     <!-- phone -->
-                    <svg class="absolute top-20 left-160 drop-shadow-2xl" width="595" height="842" viewBox="0 0 595 842"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="absolute top-20 -right-20 drop-shadow-2xl " width="595" height="842"
+                        viewBox="0 0 595 842" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="A4 - 2">
                             <g id="phone">
                                 <g id="Rectangle 1" filter="url(#filter0_d_2_12)">
@@ -341,74 +381,38 @@
                         </defs>
                     </svg>
                 </div>
-
-                <div class="hero-text -z-0">
-                    <div class="flex flex-col gap-2">
-                        <h1 id="hero-title"
-                            class="text-4xl truncate w-fit font-bold text-white bg-black py-2 px-4 rounded-2xl">Bringing
-                            Your
-                            Ideas
-                            to Life with</h1>
-                        <h1 id="hero-title"
-                            class="text-4xl truncate w-fit font-bold text-white bg-black py-2 px-4 rounded-2xl">simple
-                            and
-                            Functional
-                            Websites</h1>
-                        <h3 id="hero-excerpt" class="w-136 py-2 px-4">As a passionate web designer and developer with
-                            Scandinavian roots,
-                            I
-                            create simple,
-                            user-friendly websites</h2>
-                    </div>
-
-                    <!-- CTO -->
-                    <button id="hero-cto"
-                        class="flex items-center align-middle border-3 border-transparent w-70 gap-2 py-2 px-4 bg-gradient-to-r from-blue-200 via-blue-50 to-blue-100 rounded-xl drop-shadow-md lowercase hover:border-black">
-                        <a href="" class="font-bold">Let’s Build Something Amazing!</a>
-                        <div>
-                            <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
-                                    fill="currentColor" />
-                            </svg>
-                    </button>
-
-                    <svg id="scroll-arrow" class="size-6 animate-bounce z-50 mt-25" width="24" height="24"
-                        viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M11.0001 4H13.0001V16L18.5001 10.5L19.9201 11.92L12.0001 19.84L4.08008 11.92L5.50008 10.5L11.0001 16V4Z"
-                            fill="black" />
-                    </svg>
-                </div>
             </div>
         </div>
 
         <!-- trail -->
-        <section class="trail-bg px-12 items-center">
-            <div class="blobs">
-                <div class="blob1 absolute -right-25 top-115 h-150 w-150 rounded-full bg-blue-600 opacity-50 -z-10">
+        <section class="trail-bg w-full">
+            <div class="blobs relative grid grid-cols-2">
+                <div class="blob absolute top-0 right-20 h-150 w-150 rounded-full bg-blue-600 opacity-50 -z-10">
                 </div>
-                <div class="blob1 absolute left-30 top-175 h-125 w-125 rounded-full bg-blue-400 opacity-50 -z-10">
+                <div class="blob absolute top-75 left-50 h-125 w-125 rounded-full bg-blue-400 opacity-50 -z-10">
                 </div>
-                <div class="blob1 absolute right-60 top-270 h-100 w-100 rounded-full bg-blue-950 opacity-50 -z-10">
+                <div class="blob absolute top-170 left-80 h-100 w-100 rounded-full bg-blue-950 opacity-50 -z-10">
                 </div>
             </div>
 
-            <div class="card-trail flex flex-wrap px-8 pt-12 w-full">
-                <div class="card-container w-full flex justify-start ">
+
+            <div class="card-trail flex flex-col items-center align-middle justify-center mx-16 mt-16">
+
+                <!-- Card 1 -->
+                <div class="card-container w-full flex pl-48">
                     <div class="card flex flex-col gap-2 w-sm drop-shadow-xl">
                         <div
                             class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-to-tr from-blue-100 via-white to-blue-100">
-                            <h2 class="title font-bold text-2xl">Struggling to Make Your Online Presence Stand Out?</h2>
+                            <h2 class="title font-semibold font-title text-2xl">Struggling to Make Your Online Presence
+                                Stand Out?</h2>
                             <p>Your website should reflect your brand, engage your visitors, and drive results. If your
                                 current website isn't giving you the impact you need, you're not alone</p>
                         </div>
 
                         <!-- CTO -->
                         <button
-                            class=" card-cto flex items-center align-middle w-70 gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-200 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
-                            <a href="" class="font-bold">Let's Build Something Amazing!</a>
+                            class=" card-cto flex items-center align-middle w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
+                            <a href="" class="font-semibold font-title">Let's Build Something Amazing!</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -421,11 +425,13 @@
                     </div>
                 </div>
 
-                <div class="card-container  w-full flex -mt-20 justify-end ">
+                <!-- Card 2 -->
+                <div class="card-container w-full flex pr-32 -mt-15 justify-end ">
                     <div class="card flex flex-col items-end gap-2 w-sm drop-shadow-xl">
                         <div
-                            class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-0 from-blue-50 to-blue-100">
-                            <h2 class="title font-bold text-2xl">Your Solution: A Custom-Designed Website That Works
+                            class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-to-tr from-blue-100 via-white to-blue-100">
+                            <h2 class="title font-semibold font-title text-2xl">Your Solution: A Custom-Designed Website
+                                That Works
                             </h2>
                             <p>I specialize in crafting responsive, user friendly websites that focus on simplicity,
                                 elegance, and user experience. Drawing inspiration from my Scandinavian heritage, I
@@ -434,8 +440,8 @@
 
                         <!-- CTO -->
                         <button
-                            class=" card-cto flex items-center align-middle w-70 gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-200 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
-                            <a href="" class="font-bold">Let’s Build Something Amazing!</a>
+                            class=" card-cto flex items-center align-middle w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
+                            <a href="" class="font-semibold font-title">Let’s Build Something Amazing!</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -448,19 +454,20 @@
                     </div>
                 </div>
 
-                <div class="card-container w-full flex -mt-15 justify-start ">
+                <!-- Card 3 -->
+                <div class="card-container w-full flex pl-48 -mt-20 justify-start ">
                     <div class="card flex flex-col gap-2 w-sm drop-shadow-xl">
                         <div
-                            class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-0 from-blue-50 to-blue-100">
-                            <h2 class="title font-bold text-2xl">Scandinavian-Inspired Designs</h2>
+                            class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-to-tr from-blue-100 via-white to-blue-100">
+                            <h2 class="title font-semibold font-title text-2xl">Scandinavian-Inspired Designs</h2>
                             <p>Clean, minimalist aesthetics that align with Scandinavian design principles.
                                 Focus on simplicity, functional layouts, and calming color palettes.</p>
                         </div>
 
                         <!-- CTO -->
                         <button
-                            class=" card-cto flex items-center align-middle w-70 gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-200 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
-                            <a href="" class="font-bold">Let’s Build Something Amazing!</a>
+                            class=" card-cto flex items-center align-middle w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
+                            <a href="" class="font-semibold font-title">Let's Build Something Amazing!</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -473,19 +480,20 @@
                     </div>
                 </div>
 
-                <div class="card-container w-full flex -mt-10 justify-end ">
+                <!-- Card 4 -->
+                <div class="card-container w-full flex pr-32 -mt-10 justify-end ">
                     <div class="card flex items-end flex-col gap-2 w-sm drop-shadow-xl">
                         <div
-                            class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-0 from-blue-50 to-blue-100">
-                            <h2 class="title font-bold text-2xl">Powerful Websites on WordPress</h2>
+                            class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-to-tr from-blue-100 via-white to-blue-100">
+                            <h2 class="title font-semibold font-title text-2xl">Powerful Websites on WordPress</h2>
                             <p>Fast, responsive, and scalable websites tailored to your needs.
                                 Fully customizable, allowing you to manage your content with ease.</p>
                         </div>
 
                         <!-- CTO -->
                         <button
-                            class=" card-cto flex items-center align-middle w-70 gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-200 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
-                            <a href="" class="font-bold">Let’s Build Something Amazing!</a>
+                            class=" card-cto flex items-center align-middle w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
+                            <a href="" class="font-semibold font-title">Let’s Build Something Amazing!</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -498,38 +506,38 @@
                     </div>
                 </div>
 
-                <div class="card-container w-full flex -mt-15 justify-start ">
+                <!-- Card 5 -->
+                <div class="card-container w-full flex pl-48 -mt-15 justify-start ">
                     <div class="card flex flex-col gap-2 w-sm drop-shadow-xl">
                         <div
-                            class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-0 from-blue-50 to-blue-100">
-                            <h2 class="title font-bold text-2xl">User-Centered Experiences</h2>
+                            class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-to-tr from-blue-100 via-white to-blue-100">
+                            <h2 class="title font-semibold font-title text-2xl">User-Centered Experiences</h2>
                             <p>Seamless, intuitive designs created using Figma to ensure the best user experience.
                                 Designed for both beauty and usability, making it easy for visitors to navigate.</p>
                         </div>
 
                         <!-- CTO -->
-                        <button
-                            class=" card-cto flex items-center align-middle w-70 gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-200 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
-                            <a href="" class="font-bold">Let’s Build Something Amazing!</a>
-                            <div>
-                                <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
-                                        fill="currentColor" />
-                                </svg>
-                        </button>
+
 
                     </div>
-                    </iframe>
+
                 </div>
 
-
-
+                <button
+                    class=" card-cto flex items-center align-middle w-fit gap-2 py-2 px-4 mt-10 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
+                    <a href="" class="font-semibold font-title">Let’s Build Something Amazing!</a>
+                    <div>
+                        <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
+                                fill="currentColor" />
+                        </svg>
+                </button>
         </section>
 
         <!-- expect -->
-        <section class="expect__container flex flex-col items-center justify-center my-16 gap-8">
+        <section class="expect__container flex flex-col items-center justify-center my-16 gap-8 px-16">
 
             <h1 class="section__title text-4xl font-bold">
                 what to expect
@@ -551,8 +559,8 @@
                     <div class="description__container flex flex-col gap-4">
 
                         <!-- description -->
-                        <div class="text__container flex flex-col gap-2">
-                            <h2 class="title font-bold text-2xl">initial consultation</h3>
+                        <div class="text__container flex flex-col gap-2 max-w-lg ">
+                            <h2 class="title font-semibold font-title text-2xl">initial consultation</h3>
                                 <p class="excerpt">Let's chat about your vision, goals, and what you want your website
                                     to
                                     achieve. I'll identify your needs and set clear expectations.</p>
@@ -560,8 +568,8 @@
 
                         <!-- cto -->
                         <button id="expect-cto"
-                            class="flex items-center justify-center w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-200 rounded-xl drop-shadow-md lowercase border-3 hover:border-transparent hover:drop-shadow-xl">
-                            <a href="" class="font-bold">set up a consultation</a>
+                            class="flex items-center justify-center w-fit gap-2 py-2 px-4 font-semibold font-title bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
+                            <a href="" class="font-semibold font-title">set up a consultation</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -598,8 +606,8 @@
                     <div class="description__container flex flex-col items-end gap-4">
 
                         <!-- description -->
-                        <div class="text__container flex flex-col gap-2 text-right">
-                            <h2 class="title font-bold text-2xl">Design & Prototype</h3>
+                        <div class="text__container flex flex-col gap-2 text-right max-w-lg">
+                            <h2 class="title font-semibold font-title text-2xl">Design & Prototype</h3>
                                 <p class="excerpt">Let's chat about your vision, goals, and what you want your website
                                     to
                                     achieve. I'll identify your needs and set clear expectations.</p>
@@ -607,8 +615,8 @@
 
                         <!-- cto -->
                         <button id="expect-cto"
-                            class="flex items-center gap-2 py-2 px-4 border-gradient-to-r bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase hover:drop-shadow-xl">
-                            <a href="" class="font-bold">set up a consultation</a>
+                            class="flex items-center gap-2 py-2 px-4 border-gradient-to-r bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
+                            <a href="" class="font-semibold font-title">see my previous designs</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -646,16 +654,16 @@
                     <div class="description__container flex flex-col gap-4">
 
                         <!-- description -->
-                        <div class="text__container flex flex-col gap-2">
-                            <h2 class="title font-bold text-2xl">development</h3>
+                        <div class="text__container flex flex-col gap-2 max-w-lg">
+                            <h2 class="title font-semibold font-title text-2xl">development</h3>
                                 <p class="excerpt">Once the design is approved, I'll bring it to life with WordPress.
                                     Your website will be responsive, fast, and fully functional.</p>
                         </div>
 
                         <!-- cto -->
                         <button id="expect-cto"
-                            class="flex items-center justify-center w-55 gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-200 to-blue-300 rounded-xl drop-shadow-md lowercase hover:drop-shadow-xl">
-                            <a href="" class="font-bold">why wordpress?</a>
+                            class="flex items-center justify-center w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
+                            <a href="" class="font-semibold font-title">why wordpress?</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -695,17 +703,17 @@
                     <div class="description__container flex flex-col gap-4 items-end">
 
                         <!-- description -->
-                        <div class="text__container flex flex-col gap-2 text-right">
-                            <h2 class="title font-bold text-2xl">review & launch</h3>
-                                <p class="excerpt">I’ll design a unique, user-friendly website with a focus on
+                        <div class="text__container flex flex-col gap-2 text-right max-w-lg">
+                            <h2 class="title font-semibold font-title text-2xl">review & launch</h3>
+                                <p class="excerpt">I'll design a unique, user-friendly website with a focus on
                                     minimalist Scandinavian design principles. You'll get to see the layout, and we'll
                                     collaborate until it's perfect.</p>
                         </div>
 
                         <!-- cto -->
                         <button id="expect-cto"
-                            class="flex items-center justify-center w-55 gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-200 to-blue-300 rounded-xl drop-shadow-md lowercase hover:drop-shadow-xl">
-                            <a href="" class="font-bold">set up a consultation</a>
+                            class="flex items-center justify-center w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
+                            <a href="" class="font-semibold font-title">set up a consultation</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -748,16 +756,16 @@
                     <div class="description__container flex flex-col gap-4">
 
                         <!-- description -->
-                        <div class="text__container flex flex-col gap-2">
-                            <h2 class="title font-bold text-2xl">ongoing Support</h3>
+                        <div class="text__container flex flex-col gap-2 max-w-lg">
+                            <h2 class="title font-semibold font-title text-2xl">ongoing Support</h3>
                                 <p class="excerpt">Even after launch, I'll provide support to make sure your site stays
                                     updated and secure.</p>
                         </div>
 
                         <!-- cto -->
                         <button id="expect-cto"
-                            class="flex items-center justify-center w-70 gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-200 to-blue-300 rounded-xl drop-shadow-md lowercase hover:drop-shadow-xl">
-                            <a href="" class="font-bold">let's build something amazing!</a>
+                            class="flex items-center justify-center w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
+                            <a href="" class="font-semibold font-title">let's build something amazing!</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -784,13 +792,13 @@
         </section>
 
         <!-- about me -->
-        <section class="about__container flex align-middle items-center justify-center my-16 gap-8 mx-16">
+        <section class="about__container flex align-middle items-center justify-center gap-8 mx-16 px-16">
 
             <div class="img__wrapper">
                 <img src="/assets/imgs/picture.png" alt="picture of simon">
             </div>
             <div class="text__wrapper flex flex-col gap-5 text-center">
-                <h2 class="title text-4xl font-bold">
+                <h2 class="title text-4xl font-semibold font-title">
                     about me
                 </h2>
                 <p>Hi, I’m simon, a web designer and developer with a deep passion for creating beautiful,
@@ -801,8 +809,8 @@
         </section>
 
         <!-- skills -->
-        <section class="skills__wrapper flex flex-col items-center my-16 mx-16 gap-5">
-            <h2 class="title text-4xl font-bold">
+        <section class="skills__wrapper flex flex-col items-center mx-16 gap-5 px-16">
+            <h2 class="title text-4xl font-semibold font-title">
                 skills & tools
             </h2>
             <div class="icons__wrapper flex gap-4 ">
@@ -900,108 +908,112 @@
         </section>
 
         <!-- contact form -->
-        <section class="contact-form">
+        <section class="contact-form px-16">
             <div
-                class="form__wrapper flex flex-col gap-4 items-center text-center mx-32 my-16 px-24 py-8 bg-blue-50 rounded-4xl drop-shadow-2xl  bg-linear-to-r from-blue-300 via-white to-blue-300">
-                <h2 class="text-4xl font-bold">
+                class="form__wrapper flex flex-col gap-4 mx-16 my-16 px-24 py-8 bg-blue-50 rounded-4xl drop-shadow-2xl bg-linear-to-r from-blue-300 via-white to-blue-300">
+                <h2 class="text-4xl font-semibold font-title">
                     get in touch!
                 </h2>
                 <p>
                     Thank you for your interest in working with me! Please fill out the form below with details about
-                    your project, and I’ll get back to you as soon as possible.
+                    your project, and I'll get back to you as soon as possible.
                 </p>
 
 
-                <form class="form__wrapper items-center flex flex-col gap-2">
-                    <!-- name -->
-                    <div class="flex gap-2 items-center">
-                        <label class="mr-5" for="name">your name:</label>
-                        <input class="border-1 rounded-sm bg-white text-center px-2 pb-5 w-sm" type="text" id="name"
-                            name="name" required minlength="4" placeholder="put your name here" />
-                    </div>
+                <form class="form__wrapper flex flex-col gap-4">
 
-                    <!-- email -->
-                    <div class="flex gap-2 items-center">
-                        <label class="mr-5" for="email">your email:</label>
-                        <input class="border-1 rounded-sm bg-white text-center px-2 pb-5 w-sm" type="email" id="email"
-                            name="email" required minlength="4" placeholder="and your email address">
+                    <!-- name -->
+                    <div class="flex gap-5 mb-8">
+                        <div class="flex gap-2">
+                            <label class="block rounded-xl py-1 px-2 bg-blue-50 drop-shadow-lg" for="name">name:</label>
+                            <input
+                                class="border-1 rounded-sm bg-white text-left px-2 py-1 text-body text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-300 sm:text-sm/6"
+                                type="text" id="name" name="name" required minlength="4" placeholder="" />
+                        </div>
+
+                        <!-- email -->
+                        <div class="flex gap-2">
+                            <label class="block rounded-xl py-1 px-2 bg-blue-50 drop-shadow-lg"
+                                for="email">email:</label>
+                            <input
+                                class="border-1 rounded-sm bg-white text-left px-2 py-1 text-body text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-300 sm:text-sm/6"
+                                type="email" id="email" name="email" required minlength="4" placeholder="">
+                        </div>
                     </div>
 
                     <!-- project -->
-                    <div class="flex gap-2 items-center">
-                        <label class="mr-5" for="project">your project:</label>
-                        <input class="border-1 rounded-sm bg-white text-center px-2 pb-5 w-sm" type="text" id="project"
-                            name="project" required minlength="4"
-                            placeholder="tell me about your project, your goals, and any specific features you need.">
+                    <div class="">
+                        <label class="block rounded-xl py-1 px-2 h-8 w-fit mb-2 bg-blue-50 drop-shadow-lg"
+                            for="project">your project:</label>
+                        <textarea name="project" id="project" rows="3" required
+                            placeholder="tell me about your project, your goals, and any specific features you need."
+                            class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-300 sm:text-sm/6"></textarea>
                     </div>
 
                     <!-- timeline -->
-                    <div class="flex gap-2 items-center">
-                        <label class="mr-5" for="timeline">timeline:</label>
-                        <input class="border-1 rounded-sm bg-white text-center px-2 pb-5 w-sm" type="text" id="timeline"
-                            name="timeline" required minlength="4"
-                            placeholder="when do you hope to launch your website?">
+                    <div class="">
+                        <label class="block w-fit rounded-xl py-1 px-2 mb-2 bg-blue-50 drop-shadow-lg"
+                            for="timeline">timeline:</label>
+                        <textarea name="timeline" id="timeline" rows="3" required
+                            placeholder="when do you hope to launch your website?"
+                            class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-300 sm:text-sm/6"></textarea>
                     </div>
 
-                    <!-- budget range -->
-                    <div class="flex gap-2 items-center">
-                        <label class="mr-5" for="budget">budget range:</label>
-                        <input class="border-1 rounded-sm bg-white text-center px-2 pb-5 w-sm justify-end" type="text"
-                            id="budget" name="budget" required minlength="4"
-                            placeholder="please share your budget range to help me tailor the best solutions for your needs.">
-                    </div>
 
                     <!-- additional information -->
-                    <div class="flex gap-2 items-center">
-                        <label class="mr-5" for="info">additional information:</label>
-                        <input class="break-all border-1 rounded-sm bg-white text-center px-2 pb-5 justify-end"
-                            type="text" id="info" name="info" size="40" required minlength="4"
-                            placeholder="if you have any other information or questions, feel free to share them here.">
+                    <div class="">
+                        <label class="block w-fit rounded-xl py-1 px-2 mb-2 bg-blue-50 drop-shadow-lg"
+                            for="info">additional information:</label>
+                        <textarea name="timeline" id="timeline" rows="3"
+                            placeholder="if you have any other information or questions, feel free to share them here."
+                            class="block w-full rounded-md bg-white px-3 py-1.5 text-body text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-300 sm:text-sm/6"></textarea>
                     </div>
 
                     <!-- CTO -->
-                    <button
-                        class=" card-cto flex items-center align-middle w-70 gap-2 py-2 px-4 my-5 bg-gradient-to-r from-blue-300 via-blue-200 to-blue-300 rounded-xl drop-shadow-lg lowercase">
-                        <a href="" class="font-bold">Let’s Build Something Amazing!</a>
-                        <div>
-                            <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
-                                    fill="currentColor" />
-                            </svg>
-                    </button>
-
-
+                    <div class="w-full flex justify-between items-center">
+                        <div class="flex items-center gap-2 rounded-xl py-1 px-4 bg-blue-50 drop-shadow-lg h-10 ">
+                            <input type="radio" required>
+                            <p>I have read and accept the <a class="text-blue-700 underline" href="">terms and
+                                    conditions</a></p>
+                        </div>
+                        <button
+                            class="card-cto flex items-center align-middle w-fit gap-2 py-2 px-4 my-5 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase">
+                            <a href="" class="font-semibold font-title">send</a>
+                            <div>
+                                <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
+                                        fill="currentColor" />
+                                </svg>
+                        </button>
+                    </div>
                 </form>
-
-
             </div>
-
         </section>
 
         <!-- footer -->
         <!-- bg-linear-270 from-blue-200 via-blue-50 to-blue-200 -->
         <footer class="overflow-hidden pt-5 pb-0">
 
-            <div class="h-0">
-                <div class="blob1 relative left-10 h-100 w-100 rounded-full bg-blue-600 opacity-50 -z-10">
+            <div class="relative">
+                <div class="blob1 absolute left-0 h-100 w-100 rounded-full bg-blue-600 opacity-50 -z-10">
                 </div>
-                <div class="blob1 relative -top-100 left-150 h-75 w-75 rounded-full bg-blue-400 opacity-50 -z-10">
+                <div class="blob1 absolute left-75 h-75 w-75 rounded-full bg-blue-400 opacity-50 -z-10">
                 </div>
-                <div class="blob1 relative left-70 -top-150 h-100 w-100 rounded-full bg-blue-200 opacity-50 -z-10">
+                <div class="blob1 absolute right-0 h-100 w-100 rounded-full bg-blue-200 opacity-50 -z-10">
                 </div>
             </div>
 
-            <div class="flex justify-between mx-32 pb-5 pt-10">
+            <div class="flex justify-between">
                 <div class="left flex flex-col gap-5">
                     <div class="contact-info">
-                        <h3 class="text-2xl font-bold mb-2">contact me</h3>
+                        <h3 class="text-2xl font-title font-semibold mb-2">contact me</h3>
                         <a href="mailto:info@huitre.com">info@huitre.com</a>
                         <p>+46 707 181 818</p>
                     </div>
 
-                    <nav class="misc">
+                    <nav class="misc font-title font-semibold">
                         <ul>
                             <li><a class="opacity-50 hover:opacity-100" href="">privacy policy</a></li>
                             <li><a class="opacity-50 hover:opacity-100" href="">cookies</a></li>
@@ -1010,8 +1022,8 @@
                 </div>
 
                 <div class="quicklinks">
-                    <h3 class="text-2xl font-bold mb-2">quicklinks</h3>
-                    <ul class="">
+                    <h3 class="text-2xl font-title font-semibold mb-2">quicklinks</h3>
+                    <ul class="font-title font-semibold">
                         <li class="w-fit border-b-4 border-transparent hover:border-blue-800"><a
                                 class="opacity-50 hover:opacity-100" href="#">home</a></li>
                         <li class="w-fit border-b-4 border-transparent hover:border-blue-800"><a
