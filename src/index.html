@@ -12,14 +12,14 @@
     <div class="project-portfolio flex flex-col">
 
         <!-- site header -->
-        <header class="z-50">
-            <div class="flex items-center py-2 px-16 justify-between">
+        <header class="z-50 w-full">
+            <div class="flex items-center py-2 px-8 justify-between">
 
                 <!-- Logo -->
                 <img src="/logo/logo-4d.png" alt="Site logo: Huitre" class="max-h-10">
 
                 <!-- Menu -->
-                <nav class="font-title">
+                <nav class="font-title hidden md:block m-auto">
                     <ul class="flex gap-4 py-4 px-8">
                         <li class="border-b-4 opacity-50 border-transparent hover:border-blue-800 current-page"><a
                                 href="#">home</a></li>
@@ -39,8 +39,8 @@
 
                     <!-- CTO -->
                     <button
-                        class="flex items-center gap-2 py-2 border-3 border-transparent px-4 bg-linear-to-r from-blue-300 from-10% via-blue-100 to-90% to-blue-300 rounded-xl  drop-shadow-lg hover:border-black lowercase">
-                        <a href="" class="font-semibold font-title">get in touch</a>
+                        class="hidden sm:flex items-center gap-2 py-2 mx-2 border-3 border-transparent px-4 bg-linear-to-r from-blue-300 from-10% via-blue-100 to-90% to-blue-300 rounded-xl  drop-shadow-lg hover:border-black lowercase">
+                        <a href="" class="font-semibold font-title text-xs sm:text-lg">get in touch</a>
                         <div>
                             <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +56,7 @@
                     </button>
 
                     <!-- Menu burger -->
-                    <button>
+                    <button class="sidebar-open ">
                         <svg width="48" height="32" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 0H48V5.33333H0V0ZM0 13.3333H48V18.6667H0V13.3333ZM0 26.6667H48V32H0V26.6667Z"
                                 fill="black" />
@@ -71,23 +71,21 @@
         </header>
 
         <!-- hero -->
-        <div class="hero-bg  block">
-            <div class="hero-container grid grid-cols-2 px-16 mt-10">
-                <div class="hero-text  z-1">
-                    <div class="flex flex-col gap-1">
+        <section class="hero-bg block mb-20">
+            <div class="hero-container grid grid-cols-3 m-auto ">
+                <div class="hero-text col-span-3 sm:col-span-2 z-1 px-8 py-16 ">
+                    <div class="flex flex-col gap-1 text-wrap pt-20 sm:pt-0">
                         <h1 id="hero-title"
-                            class=" font-title text-4xl truncate w-fit font-bold text-white bg-black py-2 px-4 rounded-2xl">
+                            class="font-title w-fit text-3xl sm:text-4xl font-extrabold text-black ">
                             Bringing
                             Your
                             Ideas
-                            to Life with</h1>
-                        <h1 id="hero-title"
-                            class=" font-title text-4xl truncate w-fit font-bold text-white bg-black py-2 px-4 rounded-2xl">
-                            simple
+                            to Life with simple
                             and
                             Functional
                             Websites</h1>
-                        <h3 id="hero-excerpt" class="w-136 py-2 px-4">As a passionate web designer and developer with
+                        
+                        <h3 id="hero-excerpt" class="w-auto text-wrap ">As a passionate web designer and developer with
                             Scandinavian roots,
                             I
                             create simple,
@@ -96,7 +94,7 @@
 
                     <!-- CTO -->
                     <button id="hero-cto"
-                        class="flex items-center align-middle border-3 border-transparent w-70 gap-2 py-2 px-4 bg-gradient-to-r from-blue-200 via-blue-50 to-blue-200 rounded-xl drop-shadow-md lowercase hover:border-black">
+                        class="flex items-center align-middle border-3 border-transparent w-fit gap-2 py-2 px-4 my-6 bg-gradient-to-r from-blue-200 via-blue-50 to-blue-200 rounded-xl drop-shadow-md lowercase hover:border-black">
                         <a href="" class="font-semibold font-title">Let's Build Something Amazing!</a>
                         <div>
                             <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
@@ -107,7 +105,7 @@
                             </svg>
                     </button>
 
-                    <svg id="scroll-arrow" class="size-6 animate-bounce z-50 mt-25" width="24" height="24"
+                    <svg id="scroll-arrow" class="size-6 animate-bounce z-50 absolute bottom-5" width="24" height="24"
                         viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M11.0001 4H13.0001V16L18.5001 10.5L19.9201 11.92L12.0001 19.84L4.08008 11.92L5.50008 10.5L11.0001 16V4Z"
@@ -118,7 +116,7 @@
 
                 <div class="hero-imgs -z-0">
                     <!-- screen -->
-                    <svg class="absolute top-20 right-10 " width="911" height="593" viewBox="0 0 911 593" fill="none"
+                    <svg class="absolute w-75 sm:w-100 md:w-150 md:top-20 sm:right-5 right-10 top-0" width="911" height="593" viewBox="0 0 911 593" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="screen" filter="url(#filter0_d_48_634)">
                             <g id="screen-bg">
@@ -242,7 +240,7 @@
                     </svg>
 
                     <!-- phone -->
-                    <svg class="absolute top-20 -right-20 drop-shadow-2xl " width="595" height="842"
+                    <svg class="absolute -top-10  w-50 -right-5 sm:w-75 sm:-right-15 sm:top-0 md:w-150 md:top-15 md:-right-45  drop-shadow-2xl " width="595" height="842"
                         viewBox="0 0 595 842" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="A4 - 2">
                             <g id="phone">
@@ -382,25 +380,27 @@
                     </svg>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- trail -->
-        <section class="trail-bg w-full">
-            <div class="blobs relative grid grid-cols-2">
-                <div class="blob absolute top-0 right-20 h-150 w-150 rounded-full bg-blue-600 opacity-50 -z-10">
+        <section class="trail-bg w-full ">
+            <div class="blobs absolute grid grid-cols-2 grid-rows-6 auto-rows-auto">
+                <div class="blob absolute left-100 -top-20 ml-0 h-150 w-150 rounded-full bg-blue-600 opacity-50 -z-10">
                 </div>
-                <div class="blob absolute top-75 left-50 h-125 w-125 rounded-full bg-blue-400 opacity-50 -z-10">
+                <div
+                    class="blob absolute row-start-2 top-50 mr-20 h-125 w-125 rounded-full bg-blue-400 opacity-50 -z-10">
                 </div>
-                <div class="blob absolute top-170 left-80 h-100 w-100 rounded-full bg-blue-950 opacity-50 -z-10">
+                <div
+                    class="blob absolute row-start-3 left-100 top-130 ml-20 h-100 w-100 rounded-full bg-blue-950 opacity-50 -z-10">
                 </div>
             </div>
 
 
-            <div class="card-trail flex flex-col items-center align-middle justify-center mx-16 mt-16">
+            <div class="card-trail grid grid-cols-3 grid-rows-3 auto-rows-min mx-16 mt-16 gap-4 ">
 
                 <!-- Card 1 -->
-                <div class="card-container w-full flex pl-48">
-                    <div class="card flex flex-col gap-2 w-sm drop-shadow-xl">
+                <div class="card-container block col-span-3 sm:col-span-2">
+                    <div class="card drop-shadow-xl ">
                         <div
                             class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-to-tr from-blue-100 via-white to-blue-100">
                             <h2 class="title font-semibold font-title text-2xl">Struggling to Make Your Online Presence
@@ -408,26 +408,13 @@
                             <p>Your website should reflect your brand, engage your visitors, and drive results. If your
                                 current website isn't giving you the impact you need, you're not alone</p>
                         </div>
-
-                        <!-- CTO -->
-                        <button
-                            class=" card-cto flex items-center align-middle w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
-                            <a href="" class="font-semibold font-title">Let's Build Something Amazing!</a>
-                            <div>
-                                <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
-                                        fill="currentColor" />
-                                </svg>
-                        </button>
-
                     </div>
                 </div>
 
+
                 <!-- Card 2 -->
-                <div class="card-container w-full flex pr-32 -mt-15 justify-end ">
-                    <div class="card flex flex-col items-end gap-2 w-sm drop-shadow-xl">
+                <div class="card-container row-start-2 sm:col-start-2 col-span-3 sm:col-span-2 ">
+                    <div class="card flex flex-col gap-2 drop-shadow-xl">
                         <div
                             class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-to-tr from-blue-100 via-white to-blue-100">
                             <h2 class="title font-semibold font-title text-2xl">Your Solution: A Custom-Designed Website
@@ -437,138 +424,101 @@
                                 elegance, and user experience. Drawing inspiration from my Scandinavian heritage, I
                                 design with clean lines, minimalist aesthetics, and intuitive functionality. </p>
                         </div>
-
-                        <!-- CTO -->
-                        <button
-                            class=" card-cto flex items-center align-middle w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
-                            <a href="" class="font-semibold font-title">Let’s Build Something Amazing!</a>
-                            <div>
-                                <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
-                                        fill="currentColor" />
-                                </svg>
-                        </button>
-
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="card-container w-full flex pl-48 -mt-20 justify-start ">
-                    <div class="card flex flex-col gap-2 w-sm drop-shadow-xl">
+                <div class="card-container col-span-3 md:col-span-1 md:row-start-3">
+                    <div class="card flex flex-col gap-2 drop-shadow-xl">
                         <div
                             class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-to-tr from-blue-100 via-white to-blue-100">
                             <h2 class="title font-semibold font-title text-2xl">Scandinavian-Inspired Designs</h2>
                             <p>Clean, minimalist aesthetics that align with Scandinavian design principles.
                                 Focus on simplicity, functional layouts, and calming color palettes.</p>
                         </div>
-
-                        <!-- CTO -->
-                        <button
-                            class=" card-cto flex items-center align-middle w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
-                            <a href="" class="font-semibold font-title">Let's Build Something Amazing!</a>
-                            <div>
-                                <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
-                                        fill="currentColor" />
-                                </svg>
-                        </button>
-
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="card-container w-full flex pr-32 -mt-10 justify-end ">
-                    <div class="card flex items-end flex-col gap-2 w-sm drop-shadow-xl">
+                <div class="card-container row-start-4 col-span-3 md:col-span-1 md:row-start-3">
+                    <div class="card flex flex-col gap-2 drop-shadow-xl">
                         <div
                             class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-to-tr from-blue-100 via-white to-blue-100">
                             <h2 class="title font-semibold font-title text-2xl">Powerful Websites on WordPress</h2>
                             <p>Fast, responsive, and scalable websites tailored to your needs.
                                 Fully customizable, allowing you to manage your content with ease.</p>
                         </div>
-
-                        <!-- CTO -->
-                        <button
-                            class=" card-cto flex items-center align-middle w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
-                            <a href="" class="font-semibold font-title">Let’s Build Something Amazing!</a>
-                            <div>
-                                <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
-                                        fill="currentColor" />
-                                </svg>
-                        </button>
-
                     </div>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="card-container w-full flex pl-48 -mt-15 justify-start ">
-                    <div class="card flex flex-col gap-2 w-sm drop-shadow-xl">
+                <div class="card-container row-start-5 col-start-1 col-span-3 md:col-span-1 md:row-start-3">
+                    <div class="card flex flex-col gap-2 drop-shadow-xl">
                         <div
                             class="card-text flex flex-col gap-2 bg-blue-50 rounded-2xl py-4 px-8 bg-linear-to-tr from-blue-100 via-white to-blue-100">
                             <h2 class="title font-semibold font-title text-2xl">User-Centered Experiences</h2>
                             <p>Seamless, intuitive designs created using Figma to ensure the best user experience.
                                 Designed for both beauty and usability, making it easy for visitors to navigate.</p>
                         </div>
-
-                        <!-- CTO -->
-
-
                     </div>
 
                 </div>
+            </div>
+        
 
-                <button
-                    class=" card-cto flex items-center align-middle w-fit gap-2 py-2 px-4 mt-10 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
-                    <a href="" class="font-semibold font-title">Let’s Build Something Amazing!</a>
-                    <div>
-                        <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
-                                fill="currentColor" />
-                        </svg>
-                </button>
+        <!-- CTO -->
+        <div class="button-wrapper flex justify-end px-16">
+            <button
+                class=" card-cto flex items-center w-fit gap-2 py-2 px-4 mt-10 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-lg lowercase border-3 border-transparent hover:border-black">
+                <a href="" class="font-semibold font-title">Let's Build Something Amazing!</a>
+                <div>
+                    <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
+                            fill="currentColor" />
+                    </svg>
+            </button>
+
+        </div>
+
+
         </section>
 
         <!-- expect -->
-        <section class="expect__container flex flex-col items-center justify-center my-16 gap-8 px-16">
+        <section class="expect__container flex flex-col items-center justify-center my-16 mx-2 sm:mx-16 gap-8">
 
             <h1 class="section__title text-4xl font-bold">
                 what to expect
             </h1>
 
-            <div class="cards__container flex flex-col gap-5 items-center mx-16">
+            <div class="cards__container flex flex-col gap-5 items-center">
 
                 <!-- Card 1 -->
                 <div
-                    class="expect__card drop-shadow-lg flex items-center gap-8 bg-blue-50 rounded-full py-4 px-8 bg-linear-to-r from-white to-blue-200">
+                    class="expect__card w-fit drop-shadow-lg flex items-center gap-8 bg-blue-50 rounded-full py-4 px-8 bg-linear-to-r from-white to-blue-200">
 
                     <!-- Number -->
                     <div
-                        class="number__container flex items-center justify-center bg-blue-50 px-12 py-8 rounded-full shadow-inner">
-                        <p class="text-7xl font-extrabold">1</p>
+                        class="number__container flex items-center justify-center bg-blue-50 p-8 rounded-full shadow-inner size-12 md:size-24 md:p-12">
+                        <p class="text-4xl font-extrabold md:text-7xl">1</p>
                     </div>
 
                     <!-- description & cto -->
-                    <div class="description__container flex flex-col gap-4">
+                    <div class="description__container flex flex-col gap-4 w-full items-center text-center">
 
                         <!-- description -->
-                        <div class="text__container flex flex-col gap-2 max-w-lg ">
+                        <div class="text__container flex flex-col gap-2">
                             <h2 class="title font-semibold font-title text-2xl">initial consultation</h3>
-                                <p class="excerpt">Let's chat about your vision, goals, and what you want your website
+                                <p class="excerpt hidden md:block">Let's chat about your vision, goals, and
+                                    what you want your website
                                     to
                                     achieve. I'll identify your needs and set clear expectations.</p>
                         </div>
 
                         <!-- cto -->
                         <button id="expect-cto"
-                            class="flex items-center justify-center w-fit gap-2 py-2 px-4 font-semibold font-title bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
+                            class="sm:flex hidden items-center justify-center w-fit gap-2 py-2 px-4 font-semibold font-title bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
                             <a href="" class="font-semibold font-title">set up a consultation</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
@@ -581,7 +531,7 @@
                     </div>
 
                     <!-- icon -->
-                    <div class="icon__container">
+                    <div class="icon__container items-center justify-center align-middle flex size-12 md:size-24">
                         <svg width="140" height="158" viewBox="0 0 140 158" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -590,32 +540,34 @@
                         </svg>
                     </div>
 
+                   
+
                 </div>
 
                 <!-- Card 2 -->
                 <div
-                    class="expect__card drop-shadow-lg flex items-center w-fit gap-8 bg-blue-50 rounded-full py-4 px-8 bg-linear-to-r from-white to-blue-200">
+                    class="expect__card w-fit drop-shadow-lg flex sm:items-center gap-2 sm:gap-8 bg-blue-50 rounded-full py-4 px-8 bg-linear-to-r from-white to-blue-200">
 
                     <!-- Number -->
                     <div
-                        class="number__container flex items-center justify-center bg-blue-50 px-12 py-8 rounded-full shadow-inner">
-                        <p class="text-7xl font-extrabold">2</p>
+                        class="number__container flex items-center justify-center bg-blue-50 p-8 rounded-full shadow-inner size-12 md:size-24 md:p-12">
+                        <p class="text-4xl font-extrabold md:text-7xl">2</p>
                     </div>
 
                     <!-- description & cto -->
-                    <div class="description__container flex flex-col items-end gap-4">
+                    <div class="description__container items-center flex flex-col gap-4">
 
                         <!-- description -->
-                        <div class="text__container flex flex-col gap-2 text-right max-w-lg">
+                        <div class="text__container flex flex-col gap-2 text-center sm:items-right max-w-lg">
                             <h2 class="title font-semibold font-title text-2xl">Design & Prototype</h3>
-                                <p class="excerpt">Let's chat about your vision, goals, and what you want your website
+                                <p class="excerpt hidden md:block ">Let's chat about your vision, goals, and what you want your website
                                     to
                                     achieve. I'll identify your needs and set clear expectations.</p>
                         </div>
 
                         <!-- cto -->
                         <button id="expect-cto"
-                            class="flex items-center gap-2 py-2 px-4 border-gradient-to-r bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
+                            class="hidden sm:flex w-fit items-center gap-2 py-2 px-4 border-gradient-to-r bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
                             <a href="" class="font-semibold font-title">see my previous designs</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
@@ -628,7 +580,7 @@
                     </div>
 
                     <!-- icon -->
-                    <div class="icon__container">
+                    <div class="icon__container items-center justify-center align-middle flex size-12 md:size-24">
                         <svg width="150" height="150" viewBox="0 0 185 184" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -642,27 +594,27 @@
 
                 <!-- Card 3 -->
                 <div
-                    class="expect__card drop-shadow-lg flex items-center gap-8 bg-blue-50 rounded-full py-4 px-8 bg-linear-to-r from-white to-blue-200">
+                    class="expect__card w-fit drop-shadow-lg flex items-center gap-8 bg-blue-50 rounded-full py-4 px-8 bg-linear-to-r from-white to-blue-200">
 
                     <!-- Number -->
                     <div
-                        class="number__container flex items-center justify-center bg-blue-50 px-12 py-8 rounded-full shadow-inner">
-                        <p class="text-7xl font-extrabold">3</p>
+                        class="number__container flex items-center justify-center bg-blue-50 p-8 rounded-full shadow-inner size-12 md:size-24 md:p-12">
+                        <p class="text-4xl font-extrabold md:text-7xl">3</p>
                     </div>
 
                     <!-- description & cto -->
-                    <div class="description__container flex flex-col gap-4">
+                    <div class="description__container flex flex-col gap-4 text-center items-center">
 
                         <!-- description -->
                         <div class="text__container flex flex-col gap-2 max-w-lg">
                             <h2 class="title font-semibold font-title text-2xl">development</h3>
-                                <p class="excerpt">Once the design is approved, I'll bring it to life with WordPress.
+                                <p class="excerpt hidden md:block">Once the design is approved, I'll bring it to life with WordPress.
                                     Your website will be responsive, fast, and fully functional.</p>
                         </div>
 
                         <!-- cto -->
                         <button id="expect-cto"
-                            class="flex items-center justify-center w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
+                            class="hidden sm:flex items-center justify-center w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
                             <a href="" class="font-semibold font-title">why wordpress?</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
@@ -675,7 +627,7 @@
                     </div>
 
                     <!-- icon -->
-                    <div class="icon__container">
+                    <div class="icon__container items-center justify-center align-middle flex size-12 md:size-24">
                         <svg width="160" height="145" viewBox="0 0 167 151" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -691,28 +643,28 @@
 
                 <!-- Card 4 -->
                 <div
-                    class="expect__card drop-shadow-lg flex items-center gap-8 bg-blue-50 rounded-full py-4 px-8 bg-linear-to-r from-white to-blue-200">
+                    class="expect__card w-fit drop-shadow-lg flex items-center gap-8 bg-blue-50 rounded-full py-4 px-8 bg-linear-to-r from-white to-blue-200">
 
                     <!-- Number -->
                     <div
-                        class="number__container flex items-center justify-center bg-blue-50 px-12 py-8 rounded-full shadow-inner">
-                        <p class="text-7xl font-extrabold">4</p>
+                        class="number__container flex items-center justify-center bg-blue-50 p-8 rounded-full shadow-inner size-12 md:size-24 md:p-12">
+                        <p class="text-4xl font-extrabold md:text-7xl">4</p>
                     </div>
 
                     <!-- description & cto -->
-                    <div class="description__container flex flex-col gap-4 items-end">
+                    <div class="description__container flex flex-col gap-4 text-center items-center">
 
                         <!-- description -->
-                        <div class="text__container flex flex-col gap-2 text-right max-w-lg">
+                        <div class="text__container flex flex-col gap-2 max-w-lg">
                             <h2 class="title font-semibold font-title text-2xl">review & launch</h3>
-                                <p class="excerpt">I'll design a unique, user-friendly website with a focus on
+                                <p class="excerpt hidden md:block">I'll design a unique, user-friendly website with a focus on
                                     minimalist Scandinavian design principles. You'll get to see the layout, and we'll
                                     collaborate until it's perfect.</p>
                         </div>
 
                         <!-- cto -->
                         <button id="expect-cto"
-                            class="flex items-center justify-center w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
+                            class="hidden sm:flex items-center justify-center w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
                             <a href="" class="font-semibold font-title">set up a consultation</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
@@ -725,7 +677,7 @@
                     </div>
 
                     <!-- icon -->
-                    <div class="icon__container">
+                    <div class="icon__container items-center justify-center align-middle flex size-12 md:size-24">
                         <svg width="150" height="150" viewBox="0 0 168 168" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -744,27 +696,27 @@
 
                 <!-- Card 5 -->
                 <div
-                    class="expect__card drop-shadow-lg flex items-center gap-8 bg-blue-50 rounded-full py-4 px-8 bg-linear-to-r from-white to-blue-200">
+                    class="expect__card w-fit drop-shadow-lg flex items-center gap-8 bg-blue-50 rounded-full py-4 px-8 bg-linear-to-r from-white to-blue-200">
 
                     <!-- Number -->
                     <div
-                        class="number__container flex items-center justify-center bg-blue-50 px-12 py-8 rounded-full shadow-inner">
-                        <p class="text-7xl font-extrabold">5</p>
+                        class="number__container flex items-center justify-center bg-blue-50 p-8 rounded-full shadow-inner size-12 md:size-24 md:p-12">
+                        <p class="text-4xl font-extrabold md:text-7xl">5</p>
                     </div>
 
                     <!-- description & cto -->
-                    <div class="description__container flex flex-col gap-4">
+                    <div class="description__container flex flex-col gap-4 text-center items-center">
 
                         <!-- description -->
                         <div class="text__container flex flex-col gap-2 max-w-lg">
                             <h2 class="title font-semibold font-title text-2xl">ongoing Support</h3>
-                                <p class="excerpt">Even after launch, I'll provide support to make sure your site stays
+                                <p class="excerpt hidden md:block">Even after launch, I'll provide support to make sure your site stays
                                     updated and secure.</p>
                         </div>
 
                         <!-- cto -->
                         <button id="expect-cto"
-                            class="flex items-center justify-center w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
+                            class="hidden sm:flex items-center justify-center w-fit gap-2 py-2 px-4 bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
                             <a href="" class="font-semibold font-title">let's build something amazing!</a>
                             <div>
                                 <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
@@ -777,7 +729,7 @@
                     </div>
 
                     <!-- icon -->
-                    <div class="icon__container">
+                    <div class="icon__container items-center justify-center align-middle flex size-12 md:size-24">
                         <svg width="150" height="150" viewBox="0 0 200 201" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -789,19 +741,33 @@
                 </div>
 
             </div>
+
+            <!-- cto -->
+            <button id="expect-cto"
+            class="flex md:hidden items-center justify-center w-fit gap-2 py-2 px-4 font-semibold font-title bg-gradient-to-r from-blue-300 via-blue-100 to-blue-300 rounded-xl drop-shadow-md lowercase border-3 border-transparent hover:border-black">
+            <a href="" class="font-semibold font-title">set up a consultation</a>
+            <div>
+                <svg class="" width="15" height="16" viewBox="0 0 15 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.601183 2.52885C0.210659 2.13833 0.210659 1.50516 0.601184 1.11464L0.972593 0.743227C1.36312 0.352703 1.99628 0.352703 2.38681 0.743227L10.6863 9.04275C11.3163 9.67272 12.3934 9.22655 12.3934 8.33565L12.3934 1.92893C12.3934 1.37665 12.8412 0.928932 13.3934 0.928932L13.929 0.928932C14.4813 0.928932 14.929 1.37665 14.929 1.92893V14.0711C14.929 14.6234 14.4813 15.0711 13.929 15.0711L1.78689 15.0711C1.2346 15.0711 0.786888 14.6234 0.786888 14.0711L0.786888 13.5355C0.786888 12.9832 1.2346 12.5355 1.78689 12.5355L8.1936 12.5355C9.08451 12.5355 9.53067 11.4583 8.90071 10.8284L0.601183 2.52885Z"
+                        fill="currentColor" />
+                </svg>
+        </button>
         </section>
 
         <!-- about me -->
-        <section class="about__container flex align-middle items-center justify-center gap-8 mx-16 px-16">
-
+        <section class="about__container flex flex-col-reverse sm:flex-row align-middle items-center justify-center gap-8 m-8">
+            
             <div class="img__wrapper">
                 <img src="/assets/imgs/picture.png" alt="picture of simon">
             </div>
+            
             <div class="text__wrapper flex flex-col gap-5 text-center">
                 <h2 class="title text-4xl font-semibold font-title">
                     about me
                 </h2>
-                <p>Hi, I’m simon, a web designer and developer with a deep passion for creating beautiful,
+                <p>Hi, I'm simon, a web designer and developer with a deep passion for creating beautiful,
                     functional websites. My Scandinavian heritage has shaped my design philosophy—simplicity, clean
                     lines, and user-centered experiences are at the heart of my work.</p>
             </div>
@@ -809,11 +775,11 @@
         </section>
 
         <!-- skills -->
-        <section class="skills__wrapper flex flex-col items-center mx-16 gap-5 px-16">
+        <section class="skills__wrapper flex flex-col items-center gap-5">
             <h2 class="title text-4xl font-semibold font-title">
                 skills & tools
             </h2>
-            <div class="icons__wrapper flex gap-4 ">
+            <div class="icons__wrapper grid grid-cols-3 sm:grid-cols-6 gap-4">
                 <!-- wordpress -->
                 <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -908,9 +874,9 @@
         </section>
 
         <!-- contact form -->
-        <section class="contact-form px-16">
+        <section class="contact-form px-8 sm:px-16">
             <div
-                class="form__wrapper flex flex-col gap-4 mx-16 my-16 px-24 py-8 bg-blue-50 rounded-4xl drop-shadow-2xl bg-linear-to-r from-blue-300 via-white to-blue-300">
+                class="form__wrapper flex flex-col gap-4 p-8 md:mx-16 my-16 md:p-8 bg-blue-50 rounded-4xl drop-shadow-2xl bg-linear-to-r from-blue-300 via-white to-blue-300">
                 <h2 class="text-4xl font-semibold font-title">
                     get in touch!
                 </h2>
@@ -923,7 +889,7 @@
                 <form class="form__wrapper flex flex-col gap-4">
 
                     <!-- name -->
-                    <div class="flex gap-5 mb-8">
+                    <div class="flex flex-col md:flex-row gap-5 mb-8">
                         <div class="flex gap-2">
                             <label class="block rounded-xl py-1 px-2 bg-blue-50 drop-shadow-lg" for="name">name:</label>
                             <input
@@ -963,15 +929,16 @@
                     <!-- additional information -->
                     <div class="">
                         <label class="block w-fit rounded-xl py-1 px-2 mb-2 bg-blue-50 drop-shadow-lg"
-                            for="info">additional information:</label>
+                            for="info">additional
+                            information:</label>
                         <textarea name="timeline" id="timeline" rows="3"
                             placeholder="if you have any other information or questions, feel free to share them here."
                             class="block w-full rounded-md bg-white px-3 py-1.5 text-body text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-blue-300 sm:text-sm/6"></textarea>
                     </div>
 
                     <!-- CTO -->
-                    <div class="w-full flex justify-between items-center">
-                        <div class="flex items-center gap-2 rounded-xl py-1 px-4 bg-blue-50 drop-shadow-lg h-10 ">
+                    <div class="w-full flex flex-col sm:flex-row justify-between items-center">
+                        <div class="flex items-center gap-2 rounded-xl py-2 px-4 drop-shadow-lg ">
                             <input type="radio" required>
                             <p>I have read and accept the <a class="text-blue-700 underline" href="">terms and
                                     conditions</a></p>
@@ -996,16 +963,16 @@
         <!-- bg-linear-270 from-blue-200 via-blue-50 to-blue-200 -->
         <footer class="overflow-hidden pt-5 pb-0">
 
-            <div class="relative">
-                <div class="blob1 absolute left-0 h-100 w-100 rounded-full bg-blue-600 opacity-50 -z-10">
+            <div class="relative blobs">
+                <div class="blob absolute left-0 h-100 w-100 rounded-full bg-blue-600 opacity-50 -z-10">
                 </div>
-                <div class="blob1 absolute left-75 h-75 w-75 rounded-full bg-blue-400 opacity-50 -z-10">
+                <div class="blob absolute left-75 h-75 w-75 rounded-full bg-blue-400 opacity-50 -z-10">
                 </div>
-                <div class="blob1 absolute right-0 h-100 w-100 rounded-full bg-blue-200 opacity-50 -z-10">
+                <div class="blob absolute right-0 h-100 w-100 rounded-full bg-blue-200 opacity-50 -z-10">
                 </div>
             </div>
 
-            <div class="flex justify-between">
+            <div class="flex justify-around">
                 <div class="left flex flex-col gap-5">
                     <div class="contact-info">
                         <h3 class="text-2xl font-title font-semibold mb-2">contact me</h3>
